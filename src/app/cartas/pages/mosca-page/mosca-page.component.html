@@ -1,0 +1,25 @@
+<div class="grid p-5">
+  <div class="col-12 text-center mb-0">
+    <h1>Mosca</h1>
+  </div>
+  <div class="col-12 md:col-6">
+    <mosca-card #player ></mosca-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <mosca-card #player ></mosca-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <mosca-card #player ></mosca-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <mosca-card #player ></mosca-card>
+  </div>
+  <div class="col-12 flex justify-content-center">
+    <p-button label="Reiniciar Juego" (click)="confirm1()"></p-button>
+  </div>
+</div>
+
+<p-toast></p-toast>
+<p-confirmDialog [style]="{width: '50vw'}"></p-confirmDialog>
+
+

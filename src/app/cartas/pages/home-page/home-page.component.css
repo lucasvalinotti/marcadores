@@ -1,0 +1,19 @@
+h1 {
+  font-size: 5rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+p-card{
+  width: 600px;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  p-card {
+    width: 380px;
+    height: auto;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="grid p-5 container">
+  <mat-form-field class="col-12">
+    <mat-label>Nombre del Jugador</mat-label>
+    <input matInput #player>
+  </mat-form-field>
+  <div class="col-12 text-center">
+    <h1>{{score}}</h1>
+  </div>
+  <div class="col-12 flex justify-content-evenly">
+    <p-button label="-1" [outlined]="true" severity="-1" (onClick)="changeScore(-1)"></p-button>
+    <p-button label="-5" [outlined]="true" severity="-1" (onClick)="changeScore(-5)"></p-button>
+    <p-button label="+5" [outlined]="true" severity="-1" (onClick)="changeScore(+5)"></p-button>
+    <p-button label="+1" [outlined]="true" severity="-1" (onClick)="changeScore(+1)"></p-button>
+  </div>
+</div>
+
+<p-dialog header="Partido Terminado" [(visible)]="visible" [style]="{ width: '50vw', height: '300px' }">
+  <p>
+    {{player.value | winnerPipe}}
+  </p>
+</p-dialog>
+
